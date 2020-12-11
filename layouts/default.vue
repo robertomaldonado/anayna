@@ -1,10 +1,10 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
+      class="colored-bar"
       :mini-variant="miniVariant"
       :clipped="clipped"
-      fixed
       app
     >
       <v-list>
@@ -30,55 +30,14 @@
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-text="title" class='allura' />
       <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer
       :absolute="!fixed"
       app
@@ -98,20 +57,46 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Catalogo',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Lazos',
+          to: '/lazos'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Mochilas',
+          to: '/mochilas'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Peluches',
+          to: '/peluches'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Llaveros',
+          to: '/llaveros'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Monederos',
+          to: '/monederos'
         }
       ],
       miniVariant: false,
-      right: true,
+      right: false,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'ANAYNA'
     }
   }
 }
 </script>
+
+<style>
+.colored-bar{
+  background-image:"~assets/images/bg.png"
+}
+</style>
