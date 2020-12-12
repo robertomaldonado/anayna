@@ -5,7 +5,10 @@
       <div class="text-center">
         <div class="intro allura" />
       </div>
-      <v-card>
+      <v-card 
+        shaped
+        class="elevated-5"
+      >
         <v-card-title class="allura">
           <b>
           Anayna: Girls' Accessories

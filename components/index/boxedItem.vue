@@ -1,19 +1,21 @@
 <template>
 <div>
     <v-col cols="12">
+      <hover>
       <v-card
         shaped 
         outlined
-        class="elevation-4"
+        :elevation="hover ? 10 : 1"
       >
       <router-link
         style="text-decoration: none; color: inherit;"
-        to="/mochilas" >
+        :to="category" >
         <v-card-title class="allura">
           <b>{{ category }}</b>
         </v-card-title>
       </router-link>
       </v-card>
+      </hover>
     </v-col>
   </div>
 </template>
@@ -41,12 +43,5 @@ export default {
 .allura {
   font-family: Allura;
   font-size: 200%;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-.nuxt-link-active {
-  color: red;
 }
 </style>
