@@ -6,13 +6,10 @@
         <div class="intro allura" />
       </div>
       <v-card 
-        shaped
         class="elevated-5"
       >
         <v-card-title class="allura">
-          <b>
-          Anayna: Girls' Accessories
-          </b>
+            Revisa nuestro catálogo
         </v-card-title>
       </v-card>
     </v-col>
@@ -53,6 +50,14 @@ export default {
         {
           id:3,
           cat:"Llaveros"
+        },
+        {
+          id:4,
+          cat:"Monederos"
+        },
+        {
+          id:5,
+          cat:"Peluches"
         }
       ]
     }

@@ -35,6 +35,24 @@
     </v-app-bar>
     <v-main>
       <v-container>
+        <v-row>
+          <v-col>
+            <v-card
+              shaped
+            >
+              <router-link
+                style="text-decoration: none; color: inherit;"
+                to="/" >
+                <v-card-title class="allura">
+                  <v-icon>
+                    mdi-arrow-left
+                  </v-icon>
+                  {{ "Regresar" }}
+                </v-card-title>
+              </router-link>
+            </v-card>
+          </v-col>
+        </v-row>
         <nuxt />
       </v-container>
     </v-main>
@@ -55,41 +73,41 @@ export default {
       drawer: false,
       fixed: false,
       items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Catalogo',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Lazos',
-          to: '/lazos'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Mochilas',
-          to: '/mochilas'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Peluches',
-          to: '/peluches'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Llaveros',
-          to: '/llaveros'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Monederos',
-          to: '/monederos'
-        }
+        // {
+        //   icon: 'mdi-apps',
+        //   title: 'Catalogo',
+        //   to: '/'
+        // },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Lazos',
+        //   to: '/lazos'
+        // },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Mochilas',
+        //   to: '/mochilas'
+        // },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Peluches',
+        //   to: '/peluches'
+        // },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Llaveros',
+        //   to: '/llaveros'
+        // },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Monederos',
+        //   to: '/monederos'
+        // }
       ],
       miniVariant: false,
       right: false,
       rightDrawer: false,
-      title: 'ANAYNA'
+      title: "Anayná: Girls' Accessories"
     }
   }
 }

@@ -11,7 +11,7 @@
         style="text-decoration: none; color: inherit;"
         :to="category" >
         <v-card-title class="allura">
-          <b>{{ category }}</b>
+          {{ category }}
         </v-card-title>
       </router-link>
       </v-card>
