@@ -30,12 +30,14 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import BoxedItem from '~/components/catalog/BoxedItem.vue'
 
 export default {
   layout: 'index',
   components: {
     Logo,
-    VuetifyLogo
+    VuetifyLogo,
+    BoxedItem
   },
   computed: {
     includedPages () {
