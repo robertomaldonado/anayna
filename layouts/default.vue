@@ -52,33 +52,13 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; Anayná {{ new Date().getFullYear() }}</span>
-      <v-spacer/>
-      <v-icon>
-        mdi-facebook
-      </v-icon>
-      <v-icon>
-        mdi-instagram
-      </v-icon>
-      <v-icon>
-        mdi-twitter
-      </v-icon>
-      <v-icon>
-        mdi-whatsapp
-      </v-icon>
-      <v-spacer/>
-      <v-icon>
-        mdi-contacts
-      </v-icon>
-    </v-footer>
+    <TheFooter/>
   </v-app>
 </template>
 
 <script>
+import TheFooter from '~/components/UI/TheFooter.vue'
+
 export default {
   data () {
     return {
@@ -122,6 +102,9 @@ export default {
       rightDrawer: false,
       title: "Anayná: Girls' Accessories"
     }
+  },
+  components:{
+    TheFooter
   }
 }
 </script>

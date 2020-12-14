@@ -38,16 +38,13 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; Anayná {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <TheFooter/>
   </v-app>
 </template>
 
 <script>
+import TheFooter from '~/components/UI/TheFooter.vue'
+
 export default {
   data () {
     return {
@@ -91,6 +88,9 @@ export default {
       rightDrawer: false,
       title: "Anayná: Girls' Accessories"
     }
+  },
+  components: {
+    TheFooter
   }
 }
 </script>
