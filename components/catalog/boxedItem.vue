@@ -1,7 +1,6 @@
 <template>
 <div>
     <v-col cols="12">
-      <hover>
       <v-card
         shaped 
         outlined
@@ -10,12 +9,11 @@
       <router-link
         style="text-decoration: none; color: inherit;"
         :to="category" >
-        <v-card-title class="allura">
+        <v-card-text class="bigger-font">
           {{ category }}
-        </v-card-title>
+        </v-card-text>
       </router-link>
       </v-card>
-      </hover>
     </v-col>
   </div>
 </template>
@@ -39,9 +37,6 @@ export default {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
-}
-.allura {
-  font-family: Allura;
   font-size: 200%;
 }
 </style>

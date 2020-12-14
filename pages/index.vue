@@ -8,9 +8,9 @@
       <v-card 
         class="elevated-5"
       >
-        <v-card-title class="allura">
+        <v-card-text class="bigger-font">
             Revisa nuestro catálogo
-        </v-card-title>
+        </v-card-text>
       </v-card>
     </v-col>
     </v-row>
@@ -76,8 +76,7 @@ export default {
   background-position: center;
   background-size: cover;
 }
-.allura {
-  font-family: Allura;
-  font-size: 200%;
+.bigger-font {
+  font-size: 150%;
 }
 </style>

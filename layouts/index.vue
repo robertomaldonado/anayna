@@ -42,7 +42,7 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; Anayná {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -98,5 +98,9 @@ export default {
 <style>
 .colored-bar{
   background-image:"~assets/images/bg.png"
+}
+.allura {
+  font-family: Allura;
+  font-size: 200%;
 }
 </style>

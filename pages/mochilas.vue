@@ -1,17 +1,11 @@
 <template>
   <v-row>
     <v-col
-      v-for="n in 34"
+      v-for="n in 12"
       :key="n"
       class="d-flex child-flex"
       cols="3"
     >
-      <!-- <v-img
-        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-        aspect-ratio="1"
-        class="grey lighten-2"
-      > -->
       <v-img
         :src="`https://storage.googleapis.com/anayna_alpha/${n}.jpg`"
         aspect-ratio="1"

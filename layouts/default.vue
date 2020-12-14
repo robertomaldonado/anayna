@@ -43,12 +43,12 @@
               <router-link
                 style="text-decoration: none; color: inherit;"
                 to="/" >
-                <v-card-title class="allura">
+                <v-card-text class="bigger-font">
                   <v-icon>
                     mdi-arrow-left
                   </v-icon>
                   {{ "Regresar" }}
-                </v-card-title>
+                </v-card-text>
               </router-link>
             </v-card>
           </v-col>
@@ -60,7 +60,7 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; Anayná {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -116,5 +116,9 @@ export default {
 <style>
 .colored-bar{
   background-image:"~assets/images/bg.png"
+}
+.allura {
+  font-family: Allura;
+  font-size: 200%;
 }
 </style>
