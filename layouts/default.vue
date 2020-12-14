@@ -35,15 +35,12 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <v-row>
-          <v-col>
-            <v-card
-              shaped
-            >
+        <v-col cols="2">
+            <v-card>
               <router-link
                 style="text-decoration: none; color: inherit;"
                 to="/" >
-                <v-card-text class="bigger-font">
+                <v-card-text class="bigger-font pink-right">
                   <v-icon>
                     mdi-arrow-left
                   </v-icon>
@@ -51,8 +48,7 @@
                 </v-card-text>
               </router-link>
             </v-card>
-          </v-col>
-        </v-row>
+        </v-col>
         <nuxt />
       </v-container>
     </v-main>
@@ -61,6 +57,23 @@
       app
     >
       <span>&copy; Anayná {{ new Date().getFullYear() }}</span>
+      <v-spacer/>
+      <v-icon>
+        mdi-facebook
+      </v-icon>
+      <v-icon>
+        mdi-instagram
+      </v-icon>
+      <v-icon>
+        mdi-twitter
+      </v-icon>
+      <v-icon>
+        mdi-whatsapp
+      </v-icon>
+      <v-spacer/>
+      <v-icon>
+        mdi-contacts
+      </v-icon>
     </v-footer>
   </v-app>
 </template>
@@ -120,5 +133,8 @@ export default {
 .allura {
   font-family: Allura;
   font-size: 200%;
+}
+.pink-right {
+  background-image: linear-gradient(to bottom left,#EB618B, white);
 }
 </style>

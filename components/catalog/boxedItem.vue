@@ -2,9 +2,8 @@
 <div>
     <v-col cols="12">
       <v-card
-        shaped 
-        outlined
-        :elevation="hover ? 10 : 1"
+        shaped
+        class="pink-right"
       >
       <router-link
         style="text-decoration: none; color: inherit;"
