@@ -45,7 +45,7 @@
 export default {
   methods : {
     toFacebook () {
-      window.open("https://m.facebook.com/anayna.ec");
+      window.open("https://facebook.com/anayna.ec");
     }
   }
 }
