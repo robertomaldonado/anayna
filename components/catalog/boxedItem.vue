@@ -36,6 +36,6 @@ export default {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
-  font-size: 200%;
+  font-size: 125%;
 }
 </style>

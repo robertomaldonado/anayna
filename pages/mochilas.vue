@@ -33,6 +33,7 @@
         @click="overlay = false"
       >
         <v-icon>mdi-close-box</v-icon>
+        Cerrar
       </v-btn>
         <v-img
           :src="currentImage"
@@ -41,13 +42,6 @@
           class="grey"
           @click="overlay = false"
       ></v-img>
-      <!-- <v-btn
-        class="white--text"
-        color="red"
-        @click="overlay = false"
-      >
-        Cerrar Imagen
-      </v-btn> -->
       </v-overlay>
     </v-col>
   </v-row>

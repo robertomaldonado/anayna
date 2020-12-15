@@ -1,28 +1,20 @@
 <template>
-<div>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <div class="intro allura" />
-      </div>
-      <v-card 
-        class="elevated-5"
-      >
-        <v-card-text class="bigger-font">
-            Revisa nuestro catálogo
-        </v-card-text>
-      </v-card>
-    </v-col>
+  <div>
+      <v-card shaped style="background-color: #F9C7D6;">
+        <v-row justify="center" align="center">
+          <v-img
+          src="https://storage.googleapis.com/anayna_alpha/main_logo.png"
+          max-width="50%"
+          />
     </v-row>
+       </v-card>
     <v-row justify="center" align="center">
-    <div
-      v-for="item in includedPages"
-      :key="item.id"
-    >
-    <BoxedItem
-      :category="item.cat"
-    />
-    </div>
+      <div
+        v-for="item in includedPages"
+        :key="item.id"
+      >
+        <BoxedItem :category="item.cat" />
+      </div>
     </v-row>
   </div>
 </template>
@@ -79,6 +71,7 @@ export default {
   background-size: cover;
 }
 .bigger-font {
-  font-size: 150%;
+  font-size: 120%;
+  color:white;
 }
 </style>
