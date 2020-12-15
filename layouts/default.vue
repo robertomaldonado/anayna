@@ -35,7 +35,8 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <v-col cols="2">
+        <v-row>
+        <v-col xs="12" sm="4" md="4" lg="3" xl="2">
             <v-card>
               <router-link
                 style="text-decoration: none; color: inherit;"
@@ -49,6 +50,7 @@
               </router-link>
             </v-card>
         </v-col>
+        </v-row>
         <nuxt />
       </v-container>
     </v-main>
