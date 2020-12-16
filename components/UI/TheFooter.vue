@@ -15,6 +15,7 @@
       </div>
       <div class="mr-4">
         <v-btn
+          @click="toInstagram()"
           fab
           small
         >
@@ -23,6 +24,7 @@
       </div>
       <div class="mr-4">
         <v-btn
+          @click="openWhatsApp()"
           fab
           small
         >
@@ -32,6 +34,7 @@
     <v-spacer/>
       <div class="mr-4">
         <v-btn
+          @click="openEmail()"
           small
         >
           <v-icon>mdi-contacts</v-icon>
@@ -45,6 +48,15 @@ export default {
   methods : {
     toFacebook () {
       window.open("https://facebook.com/anayna.ec");
+    },
+    toInstagram () {
+      window.open("https://m.instagram.com/anayna.ec");
+    },
+    openWhatsApp () {
+      window.open("https://api.whatsapp.com/send?phone=+593999980185");
+    },
+    openEmail () {
+      window.open("mailto:maldonadogaliano@hotmail.com?subject=Pedidos Anayna&body=Estoy interesado en los items:");
     }
   }
 }
