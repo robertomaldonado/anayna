@@ -11,7 +11,7 @@
         :src="`https://storage.googleapis.com/anayna_alpha/${n}.jpg`"
         aspect-ratio="1"
         class="grey lighten-2"
-        @click="showImage(`https://storage.googleapis.com/anayna_alpha/${n}.jpg`)"
+        @click="showImage(`${n}`)"
       >
         <template v-slot:placeholder>
           <v-row
@@ -63,7 +63,7 @@
           </v-img>
           <v-card-title class="title text-center-align">
             <v-spacer/>
-              Code: MLOL-{{n}}
+              Code: {{currentCode}}
             <v-spacer/>
           </v-card-title>
         </v-card>
@@ -76,14 +76,16 @@
   export default {
     data () {
       return {
-        currentImage: "https://storage.googleapis.com/anayna_alpha/1.jpg",
+        currentImage: "",
+        currentCode: "",
         overlay: false,
         zIndex: 0
       }
     },
     methods: {
-      showImage (item) {
-        this.currentImage = item
+      showImage (item_id) {
+        this.currentImage = `https://storage.googleapis.com/anayna_alpha/${item_id}.jpg`
+        this.currentCode = `MLOL-${item_id}`
         this.overlay = !this.overlay
       }
     }
