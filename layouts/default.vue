@@ -42,7 +42,7 @@
                 style="text-decoration: none; color: inherit;"
                 to="/" >
                 <v-card-text class="bigger-font pink-right">
-                  <v-icon>
+                  <v-icon class="white--text">
                     mdi-arrow-left
                   </v-icon>
                   {{ "Regresar" }}

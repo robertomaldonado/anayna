@@ -26,11 +26,9 @@
           </v-row>
         </template>
       </v-img>
-        <v-card-title class="title">
-          <v-spacer/>
-            Code: XYX-123
-          <v-spacer/>
-        </v-card-title>
+        <p class="text-center">
+          XYX-123
+        </p>
       </v-card>
       <v-overlay
         :z-index="zIndex"
@@ -49,7 +47,20 @@
             max-width="400"
             class="grey"
             @click="overlay = false"
-          />
+          >
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+          </v-img>
           <v-card-title class="title text-center-align">
             <v-spacer/>
               Code: XYX-123
