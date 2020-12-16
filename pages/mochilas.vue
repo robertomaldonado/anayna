@@ -34,12 +34,12 @@
         :z-index="zIndex"
         :value="overlay"
       >
-      <v-btn
-        @click="overlay = false"
-      >
-        <v-icon>mdi-close-box</v-icon>
-        Cerrar
-      </v-btn>
+        <v-btn
+          @click="overlay = false"
+        >
+          <v-icon>mdi-close-box</v-icon>
+          Cerrar
+        </v-btn>
         <v-card>
           <v-img
             :src="currentImage"
@@ -48,25 +48,25 @@
             class="grey"
             @click="overlay = false"
           >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
-            >
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
           </v-img>
           <v-card-title class="title text-center-align">
             <v-spacer/>
               Code: MLOL-{{n}}
             <v-spacer/>
           </v-card-title>
-      </v-card>
+        </v-card>
       </v-overlay>
     </v-col>
   </v-row>
