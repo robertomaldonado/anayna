@@ -120,6 +120,6 @@ export default {
   font-size: 200%;
 }
 .pink-right {
-  background-image: linear-gradient(to bottom left,#EB618B, white);
+  background-image: linear-gradient(to right,#EB618B, #F9C7D6);
 }
 </style>

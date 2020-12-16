@@ -4,8 +4,9 @@
       v-for="n in 12"
       :key="n"
       class="d-flex child-flex"
-      cols="3"
+      cols="4"
     >
+      <v-card>
       <v-img
         :src="`https://storage.googleapis.com/anayna_alpha/${n}.jpg`"
         aspect-ratio="1"
@@ -25,6 +26,12 @@
           </v-row>
         </template>
       </v-img>
+        <v-card-title class="title">
+          <v-spacer/>
+            Code: XYX-123
+          <v-spacer/>
+        </v-card-title>
+      </v-card>
       <v-overlay
       :z-index="zIndex"
       :value="overlay"
@@ -35,13 +42,20 @@
         <v-icon>mdi-close-box</v-icon>
         Cerrar
       </v-btn>
-        <v-img
-          :src="currentImage"
-          max-height="400"
-          max-width="400"
-          class="grey"
-          @click="overlay = false"
-      ></v-img>
+        <v-card>
+          <v-img
+            :src="currentImage"
+            max-height="400"
+            max-width="400"
+            class="grey"
+            @click="overlay = false"
+          />
+          <v-card-title class="title text-center-align">
+            <v-spacer/>
+              Code: XYX-123
+            <v-spacer/>
+          </v-card-title>
+      </v-card>
       </v-overlay>
     </v-col>
   </v-row>
@@ -53,13 +67,7 @@
       return {
         currentImage: "https://storage.googleapis.com/anayna_alpha/1.jpg",
         overlay: false,
-        zIndex: 0,
-        items: [
-          { src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'},
-          { src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'},
-          { src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'},
-          { src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'},
-        ],
+        zIndex: 0
       }
     },
     methods: {
