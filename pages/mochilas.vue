@@ -33,8 +33,8 @@
         </v-card-title>
       </v-card>
       <v-overlay
-      :z-index="zIndex"
-      :value="overlay"
+        :z-index="zIndex"
+        :value="overlay"
       >
       <v-btn
         @click="overlay = false"
