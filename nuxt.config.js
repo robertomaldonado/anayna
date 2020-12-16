@@ -18,6 +18,13 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Allura&display=swap' }
     ]
   },
+  /*
+  ** Customize the progress-bar color
+  */
+ loadingIndicator: {
+   name: 'circle',
+   color: '#EB618B'
+ },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [

@@ -27,7 +27,7 @@
         </template>
       </v-img>
         <p class="text-center">
-          XYX-123
+          MLOL-{{n}}
         </p>
       </v-card>
       <v-overlay
@@ -63,7 +63,7 @@
           </v-img>
           <v-card-title class="title text-center-align">
             <v-spacer/>
-              Code: XYX-123
+              Code: MLOL-{{n}}
             <v-spacer/>
           </v-card-title>
       </v-card>
