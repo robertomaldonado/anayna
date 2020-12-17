@@ -1,7 +1,7 @@
 <template>
       <v-card>
       <v-img
-        :src="`https://storage.googleapis.com/anayna_alpha/${code}.jpg`"
+        :src="`https://storage.googleapis.com/anayna_alpha/${folder}/${code}.jpg`"
         aspect-ratio="1"
         class="grey lighten-2"
         v-bind="$attrs"
@@ -21,7 +21,7 @@
         </template>
       </v-img>
         <p class="text-center">
-          MLO-{{code}}
+          {{prefix}}-{{code}}
         </p>
       </v-card>
 </template>
@@ -29,7 +29,10 @@
 <script>
   export default {
     props: {
-      code: {type: Number, default: 0}
+      code: {type: Number, default: 0},
+      prefix: {type: String, default: ''},
+      folder: {type: String, default: ''},
+      currentImage: {type: String, default: ''}
     },
     data () {
       return {
