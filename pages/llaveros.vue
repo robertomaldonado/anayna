@@ -1,5 +1,7 @@
 <template>
-  <UnderConstruction/>
+  <div>
+    <UnderConstruction/>
+  </div>
 </template>
 
 <script>
