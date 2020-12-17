@@ -8,6 +8,8 @@
     >
       <ItemDisplay 
         :code="+n"
+        folder="mochilas"
+        prefix="MLL"
         @click="showImage(`${n}`)"
       />
       <v-overlay
@@ -59,7 +61,7 @@ export default {
   methods: {
     showImage (item_id) {
       this.currentImage = `https://storage.googleapis.com/anayna_alpha/mochilas/${item_id}.jpg`
-      this.currentCode = `MLO-${item_id}`
+      this.currentCode = `MLL-${item_id}`
       this.overlay = !this.overlay
     }
   }
