@@ -39,8 +39,7 @@ export default {
         { id:3, cat:"Bolsos"},
         { id:4, cat:"Carteras"},
         { id:5, cat:"MiniMochilas"},
-        { id:6, cat:"Monederos"},
-        { id:7, cat:"Peluches"},
+        { id:6, cat:"LLaveros"},
         { id:8, cat:"Monederos"}
       ]
     }
