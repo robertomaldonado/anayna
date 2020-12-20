@@ -34,26 +34,14 @@ export default {
   computed: {
     includedPages () {
       return [
-        {
-          id:1,
-          cat:"Lazos"
-        },
-        {
-          id:2,
-          cat:"Mochilas"
-        },
-        {
-          id:3,
-          cat:"Llaveros"
-        },
-        {
-          id:4,
-          cat:"Monederos"
-        },
-        {
-          id:5,
-          cat:"Peluches"
-        }
+        { id:1, cat:"Lazos"},
+        { id:2, cat:"Mochilas"},
+        { id:3, cat:"Bolsos"},
+        { id:4, cat:"Carteras"},
+        { id:5, cat:"MiniMochilas"},
+        { id:6, cat:"Monederos"},
+        { id:7, cat:"Peluches"},
+        { id:8, cat:"Monederos"}
       ]
     }
   }

@@ -2,7 +2,7 @@
   <div>
     <v-row>
     <v-col
-      v-for="n in 12" :key="n"
+      v-for="n in 31" :key="n"
       class="d-flex child-flex"
       cols="4" md="3" lg="2" xl="2"
     >

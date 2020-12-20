@@ -2,14 +2,14 @@
   <div>
     <v-row>
     <v-col
-      v-for="n in 50" :key="n"
+      v-for="n in 6" :key="n"
       class="d-flex child-flex"
       cols="4" md="3" lg="2" xl="2"
     >
       <ItemDisplay 
         :code="+n"
-        folder="lazos"
-        prefix="LAZ"
+        folder="mini_mochilas"
+        prefix="MNL"
         @click="showImage(`${n}`)"
       />
       <v-overlay
@@ -60,8 +60,8 @@ export default {
   },
   methods: {
     showImage (item_id) {
-      this.currentImage = `https://storage.googleapis.com/anayna_alpha/lazos/${item_id}.jpg`
-      this.currentCode = `LAZ-${item_id}`
+      this.currentImage = `https://storage.googleapis.com/anayna_alpha/mini_mochilas/${item_id}.jpg`
+      this.currentCode = `MNL-${item_id}`
       this.overlay = !this.overlay
     }
   }
