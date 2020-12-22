@@ -7,10 +7,10 @@
       cols="4" md="3" lg="2" xl="2"
     >
       <ItemDisplay 
-        :code="+current_item+1"
+        :code="+current_item"
         :folder="folder"
         :prefix="prefix"
-        @click="showImage(`${current_item+1}`)"
+        @click="showImage(`${current_item}`)"
       />
       <v-overlay
         :z-index="zIndex"
