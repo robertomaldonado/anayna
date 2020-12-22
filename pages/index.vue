@@ -36,9 +36,9 @@ export default {
       return [
         { id:1, cat:"Lazos"},
         { id:2, cat:"Mochilas"},
+        { id:5, cat:"MiniMochilas"},
         { id:3, cat:"Bolsos"},
         { id:4, cat:"Carteras"},
-        { id:5, cat:"MiniMochilas"},
         { id:6, cat:"LLaveros"},
         { id:8, cat:"Monederos"}
       ]
