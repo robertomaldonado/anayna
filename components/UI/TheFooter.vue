@@ -53,10 +53,10 @@ export default {
       window.open("https://m.instagram.com/anayna.ec");
     },
     openWhatsApp () {
-      window.open("https://api.whatsapp.com/send?phone=+593999980185");
+      window.open("https://api.whatsapp.com/send?phone=+593");
     },
     openEmail () {
-      window.open("mailto:maldonadogaliano@hotmail.com?subject=Pedidos Anayna&body=Estoy interesado en los items:");
+      window.open("mailto:replace_me@hotmail.com?subject=Pedidos Anayna&body=Estoy interesado en los items:");
     }
   }
 }
